@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sokol.simple_notes.MainActivity">
+
+
+    <com.getbase.floatingactionbutton.AddFloatingActionButton
+        android:id="@+id/normal_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:onClick="addNew"/>
+
+   <ViewStub
+       android:id="@+id/stab_list"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:inflatedId="@+id/showlayout"
+       android:layout="@layout/my_listwiew"/>
+    <ViewStub
+        android:id="@+id/stab_gried"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inflatedId="@+id/showlayout"
+        android:layout="@layout/my_griedview"/>
+
+</RelativeLayout>
